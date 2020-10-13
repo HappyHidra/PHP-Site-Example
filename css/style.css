@@ -1,0 +1,381 @@
+/*= ОБЩИЕ СТИЛИ
+	--------------------------------------------------------*/
+
+:root {
+    --main-bg-color: rgb(119, 112, 112);
+}
+
+body {
+    margin: 0px;
+    /** отступы со всех сторон равны 0px **/
+    padding: 0px;
+    height: auto;
+    min-width: 550px;
+    background: var(--main-bg-color);
+    background-image: url("../images/fon4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: rgba(48, 215, 154, 0.705);
+}
+
+a {
+    color: rgb(48, 215, 153);
+    font-weight: 400;
+}
+
+a:hover {
+    color: wheat;
+}
+
+#intResult {
+    color: pink;
+    font-size: 20px;
+}
+
+#strenghtResult {
+    color: pink;
+    font-size: 20px;
+}
+
+#agilityResult {
+    color: pink;
+    font-size: 20px;
+}
+
+
+/* #persnumber {
+    color: black;
+    display: block;
+    height: 100%;
+}
+
+#perscolor {
+    color: black;
+    display: block;
+    height: 100%;
+} */
+
+#hero_portrait {
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+
+span {
+    font-weight: 300;
+}
+
+.mlogin {
+    margin: auto;
+}
+
+.mregister {
+    margin: auto;
+}
+
+.error {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #f58220;
+}
+
+.regtext {
+    font-size: 16px;
+    margin-top: 5%;
+    color: wheat;
+}
+
+
+/*= КОНТЕЙНЕРЫ
+         --------------------------------------------------------*/
+
+.container {
+    font-weight: 400;
+    height: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(15, 3, 3, 0.781);
+    line-height: 110%;
+}
+
+#attr {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(21, 12, 5, 0.7);
+    color: wheat;
+    margin: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#absContainer {
+    position: relative;
+    padding: 0px;
+    width: min-content;
+}
+
+#loginAjaxForm {
+    text-align: center;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(21, 12, 5, 0.7);
+    margin: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    max-width: fit-content;
+}
+
+#chooseHeroForm {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(21, 12, 5, 0.7);
+    color: wheat;
+    margin: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#registerform {
+    text-align: center;
+    height: auto;
+    margin: auto;
+    width: 80%;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    background-color: rgba(21, 12, 5, 0.7);
+}
+
+#welcome {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    background-color: rgba(21, 12, 5, 0.7);
+    color: wheat;
+    margin: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#welcometext {
+    width: 100%;
+}
+
+#attr {
+    visibility: hidden;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container h1 {
+    color: rgb(224, 224, 224);
+    display: inline-block;
+}
+
+.container label {
+    color: rgb(224, 224, 224);
+    background: #3d4344a4;
+    font-size: 16px;
+}
+
+#login {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+#logout {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    color: wheat;
+    background: rgba(172, 171, 171, 0.479);
+    margin: auto;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+.container form .input,
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="e"] {
+    background: rgba(245, 222, 179, 0.801);
+    color: black;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: auto;
+    outline: none;
+    border: 1px solid #d9d9d980;
+}
+
+.container form .input:focus {
+    border: 1px solid #f58220;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245, 130, 32, 0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245, 130, 32, 0.75);
+    box-shadow: 0 0 3px 0 rgba(245, 130, 32, 0.75);
+}
+
+
+/*= КНОПКИ
+         --------------------------------------------------------*/
+
+.button {
+    border: solid 1px #252727;
+    background: #3d4344a4;
+    background: -moz-linear-gradient(top, #faa51a, #f47a20);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: rgb(224, 224, 224);
+    padding: 7px 12px;
+    margin: 10px;
+    font-size: 24px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float: center;
+    text-align: center;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+#btnCancel {
+    visibility: hidden;
+}
+
+#btnRegistration {
+    float: right;
+}
+
+.button:hover {
+    background: #888380;
+    background: -webkit-gradient( linear, left top, leftbottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top, #f88e11, #f06015);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+
+/* .footer {
+    width: 100%;
+    min-width: 410px;
+    color: white;
+    background-color: rgba(245, 222, 179, 0.664);
+    margin-top: -50px;
+    height: 100px;
+    line-height: 3.5em;
+} */
+
+#map {
+    width: 500px;
+    height: 400px;
+}
+
+.help {
+    color: wheat;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#game {
+    background-image: url("../images/fon.jpg");
+    font-size: 25px;
+    width: 100%;
+}
+
+#clicks {
+    float: left;
+}
+
+#again {
+    float: left;
+    color: rgb(48, 215, 153);
+    padding: 10px;
+}
+
+
+/* monitors and laptops */
+
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 800px;
+    }
+    .mainHeader {
+        font-size: 24px;
+        color: rgb(221, 82, 39);
+    }
+    span {
+        font-size: 24px;
+    }
+    input {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .container {
+        width: 800px;
+    }
+    .mainHeader {
+        font-size: 16px;
+    }
+    span {
+        font-size: 16x;
+    }
+    input {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        height: 100%;
+    }
+    body {
+        -webkit-background-size: auto 100vh;
+        -moz-background-size: auto 100vh;
+        -o-background-size: auto 100vh;
+        background-size: auto 100vh;
+        background-image: url("../images/mainmobile.jpg");
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+}
